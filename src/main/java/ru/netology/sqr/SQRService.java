@@ -1,13 +1,13 @@
 package ru.netology.sqr;
 
 public class SQRService {
-    public int sqrtCeil(int start ,int limit ) {
-        for (int i = 10; i <= 99;  i++) {
-            if (i * i >= start)
-                if (i * i <= limit) {
-                    return i++;
-                }
+    public int sqrtCeil(int start, int limit) {
+        int count = 0;
+        for (int i = 10; i <= 99; i++) {
+            if (i * i >= start && i * i <= limit) {
+                count++;
+            }
         }
-        return 0;
+        return count;
     }
 }

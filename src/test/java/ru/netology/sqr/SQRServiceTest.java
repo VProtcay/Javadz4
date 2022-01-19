@@ -11,8 +11,8 @@ class SQRServiceTest {
         SQRService service = new SQRService();
         int start = 200;
         int limit = 300;
-        int expected = 15;
-        int actual = service.sqrtCeil(start,limit);
-        assertEquals(expected , actual);
+        int expected = 3;
+        int actual = service.sqrtCeil(start, limit);
+        assertEquals(expected, actual);
     }
 }
