@@ -15,4 +15,24 @@ class SQRServiceTest {
         int actual = service.sqrtCeil(start, limit);
         assertEquals(expected, actual);
     }
+
+    @Test
+    void shouldSqrtCeilUnderLimit() {
+        SQRService service = new SQRService();
+        int start = 0;
+        int limit = 20;
+        int expected = 0;
+        int actual = service.sqrtCeil(start, limit);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void shouldSqrtCeilOverLimit() {
+        SQRService service = new SQRService();
+        int start = 9802;
+        int limit = 10000;
+        int expected = 0;
+        int actual = service.sqrtCeil(start, limit);
+        assertEquals(expected, actual);
+    }
 }
